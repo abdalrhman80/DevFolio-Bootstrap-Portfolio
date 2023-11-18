@@ -121,13 +121,22 @@ body:has(#Contact:target) .navbar .navbar-nav .nav-link[href="#Contact"]::before
     transition: color var(--animation-duration);
 }
 
-/* 
-.deep-dropdown:hover .deep-dropdown-list {
+.dropend .dropdown-menu {
+    left: 101%;
+    top: 0;
+}
+
+.dropdown-toggle::after,
+.dropend .dropdown-toggle::after {
+    display: none;
+}
+
+.dropend:hover>.dropdown-menu {
     display: block;
-} */
+}
 
 @media screen and (min-width:992px) {
-    .dropdown:hover .dropdown-menu {
+    .dropdown:hover>.dropdown-menu {
         display: block;
     }
 }
@@ -156,6 +165,10 @@ body:has(#Contact:target) .navbar .navbar-nav .nav-link[href="#Contact"]::before
     }
 }
 
+.dropend .nav-link:hover {
+    color: var(--color-skyBlue) !important;
+}
+
 /* End Navbar */
 
 /* Start Home */
@@ -168,7 +181,6 @@ body:has(#Contact:target) .navbar .navbar-nav .nav-link[href="#Contact"]::before
 
 .overlay {
     background-color: rgba(0, 0, 0, .5);
-    /* height: 100%; */
     height: 100vh;
 }
 
