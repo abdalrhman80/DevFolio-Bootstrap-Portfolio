@@ -325,6 +325,22 @@ body:has(#Contact:target) .navbar .navbar-nav .nav-link[href="#Contact"]::before
     transform: scale(1.3);
 }
 
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-close {
+    --bs-btn-close-bg: none;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: none;
+    --bs-btn-close-focus-shadow: none;
+}
+
 /* End portfolio */
 
 /* Start Developers */
